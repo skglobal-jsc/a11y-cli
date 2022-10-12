@@ -10,7 +10,14 @@ inquirer
       type: 'input',
       name: 'url',
       message: 'Enter the URL of the page you want to convert:',
-      default: 'https://skg-development-dev.s3.ap-southeast-1.amazonaws.com/public/original.html',
+      default:
+        'https://skg-development-dev.s3.ap-southeast-1.amazonaws.com/public/original.html',
+    },
+    {
+      type: 'input',
+      name: 'contentSelector',
+      message: 'Enter the selector of the content you want to scrap:',
+      default: 'body',
     },
     {
       type: 'input',
@@ -20,9 +27,16 @@ inquirer
     },
   ])
   .then(async (answers) => {
-    const { url, output } = answers;
+    const { url, output, contentSelector } = answers;
+    console.log('Converting...', contentSelector);
     const converter = new A11yConverter();
-    const { html } = await converter.convert({ url, method: 'GET' });
+    const { html } = await converter.convert({
+      url,
+      method: 'GET',
+      scrapingOptions: {
+        contentSelector,
+      },
+    });
 
     writeFileSync(output, html);
   });
