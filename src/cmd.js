@@ -2,7 +2,7 @@
 import inquirer from 'inquirer';
 
 import { writeFileSync } from 'fs';
-import { A11yConverter } from 'a11y-converter';
+import { fromUrl } from 'htmltiny';
 
 inquirer
   .prompt([
@@ -17,7 +17,7 @@ inquirer
       type: 'input',
       name: 'contentSelector',
       message: 'Enter the selector of the content you want to scrap:',
-      default: 'body',
+      default: 'main',
     },
     {
       type: 'input',
@@ -29,12 +29,11 @@ inquirer
   .then(async (answers) => {
     const { url, output, contentSelector } = answers;
     console.log('Converting...', contentSelector);
-    const converter = new A11yConverter();
-    const { html } = await converter.convert({
+    const html = await fromUrl({
       url,
-      method: 'GET',
-      scrapingOptions: {
-        contentSelector,
+      opt: {
+        contentSelectors: [contentSelector],
+        url,
       },
     });
 
