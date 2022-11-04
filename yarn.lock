@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@sk-global/scrapeer@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@sk-global/scrapeer/-/scrapeer-0.0.15.tgz#04d9029d2e5c67548d1560a8d019afeb4b2f1af0"
-  integrity sha512-1kSdN3Dy3Atn0G2TgecRc68mfgaZhnKoaKuN0XPSEgIaKuMFcbbGBGQqJyLaOCeIhvzUK+PO2Og+kU35WuDN3Q==
+"@sk-global/scrapeer@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@sk-global/scrapeer/-/scrapeer-0.0.16.tgz#f4a6c4d7ea26fc10590519609cd02c0d7ebbfa9e"
+  integrity sha512-uOTXl+gSpQNWd8mTMR+heFMQWdHM1RUe8rGkKl1MqU7W7xO5KPAzadUwq0CTSeF8qFNUwSj413NU3XjdwQMp/A==
 
 "@szmarczak/http-timer@4.0.6":
   version "4.0.6"
@@ -58,13 +58,12 @@
   dependencies:
     "@types/node" "*"
 
-a11y-converter@^0.2.4:
-  version "0.2.36"
-  resolved "https://registry.yarnpkg.com/a11y-converter/-/a11y-converter-0.2.36.tgz#7791d9e3e186fbf91c43bd41991f866740fb2ba4"
-  integrity sha512-PuUzYS5zu84KBb2sUuadm5Y3FlVCYLyF1c6kf1+324beTDcIT3Ghj176LJB0KEJt236w0yjk6+2op6I3iHBlwg==
+a11y-converter@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/a11y-converter/-/a11y-converter-0.3.2.tgz#b5718b5ac3ee9f2931cc15b99f17fb0cb23561f2"
+  integrity sha512-qzeHDezig93mzL46tFtHRR06Z0Ivvf/MQyHJujXr54o1sn826IczOXuwAnGR4KKnKBkKKfDEzPldv2cpV3Wgxw==
   dependencies:
-    "@sk-global/scrapeer" "^0.0.15"
-    axios "^0.27.2"
+    "@sk-global/scrapeer" "^0.0.16"
     cheerio "^1.0.0-rc.12"
     content-type "^1.0.4"
     got-scraping "^3.2.11"
@@ -129,14 +128,6 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
-
-axios@^0.27.2:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
-  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
-  dependencies:
-    follow-redirects "^1.14.9"
-    form-data "^4.0.0"
 
 axios@^1.1.3:
   version "1.1.3"
@@ -501,7 +492,7 @@ figures@^5.0.0:
     escape-string-regexp "^5.0.0"
     is-unicode-supported "^1.2.0"
 
-follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==

@@ -12,7 +12,7 @@
     "dev": "node ./src/cmd.js"
   },
   "dependencies": {
-    "a11y-converter": "^0.2.4",
+    "a11y-converter": "^0.3.2",
     "htmltiny": "^0.1.2",
     "inquirer": "^9.1.3"
   },
