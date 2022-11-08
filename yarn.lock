@@ -599,10 +599,10 @@ htmlparser2@^8.0.1:
     domutils "^3.0.1"
     entities "^4.3.0"
 
-htmltiny@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/htmltiny/-/htmltiny-0.1.2.tgz#8d11b93e315b9662b36f9404e6ff622176d89125"
-  integrity sha512-kYKadNAaGR26EOm/Uil/x8HtiqIKsp8LfDFHuRJojbOQR8Fd1LtBvviCKo0lhkmd4Qtt8QfobqAz2p9uZENbmg==
+htmltiny@^0.2.21:
+  version "0.2.21"
+  resolved "https://registry.yarnpkg.com/htmltiny/-/htmltiny-0.2.21.tgz#8614cba366e9884213e022cad867d203eb0600d8"
+  integrity sha512-mOdDxoP/nAGeXM2H9A1F1ztNdAuPKlEiRmkmU8JhPPfkD8V6xB4+/jV4zW9aR6Jv/Jt6AA2sjPfJl/kkVkf7ew==
   dependencies:
     axios "^1.1.3"
     cheerio "^1.0.0-rc.12"
