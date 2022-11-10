@@ -599,10 +599,10 @@ htmlparser2@^8.0.1:
     domutils "^3.0.1"
     entities "^4.3.0"
 
-htmltiny@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/htmltiny/-/htmltiny-0.1.2.tgz#8d11b93e315b9662b36f9404e6ff622176d89125"
-  integrity sha512-kYKadNAaGR26EOm/Uil/x8HtiqIKsp8LfDFHuRJojbOQR8Fd1LtBvviCKo0lhkmd4Qtt8QfobqAz2p9uZENbmg==
+htmltiny@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/htmltiny/-/htmltiny-0.4.0.tgz#920bfc64a968a96bcbd52b58cf099af6307ce9fc"
+  integrity sha512-FyN9nH0k0qfalLwf7IG5rVp7d5x+43rg+vBEX2k+/tOAQ+G731SQ3kqzVUPiHPCRxDo31eEYUqckKVtSmtCq3Q==
   dependencies:
     axios "^1.1.3"
     cheerio "^1.0.0-rc.12"
@@ -612,6 +612,7 @@ htmltiny@^0.1.2:
     iconv-lite "^0.6.3"
     jsdom "^20.0.1"
     mime-types "^2.1.35"
+    nanoid "^4.0.0"
     ow "^0.28.1"
 
 http-cache-semantics@^4.0.0:
@@ -825,6 +826,11 @@ mute-stream@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
+
+nanoid@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.0.tgz#6e144dee117609232c3f415c34b0e550e64999a5"
+  integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
 node-releases@^2.0.6:
   version "2.0.6"
